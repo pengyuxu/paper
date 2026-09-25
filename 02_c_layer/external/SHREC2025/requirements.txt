@@ -1,0 +1,9 @@
+vtk==9.4.2
+trimesh==4.6.8
+scipy==1.15.2
+scikit-learn==1.6.1
+matplotlib
+tqdm
+pandas
+jupyter
+notebook

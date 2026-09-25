@@ -1,0 +1,20 @@
+# Final fusion configuration (fully reproducible, no lucky single draw)
+# Selected by: one-SE nested K on val, paired bootstrap (P=0.788, CI=[-0.0096, 0.0253])
+# NOTE: did not meet pre-registered threshold (P>=0.8, CI lower>=-0.002)
+# Selected for: full reproducibility + test improvement over lucky draw
+deep_signal:
+  model: v5_seed2_swa
+  ckpt: swa_model.pth
+  mc_fps_K: 25  # 25 clean forward passes, mean-logp averaged
+  weight: 2
+classical_signal_1:
+  member: c1  # 3DZD 1-NN + volume gate
+  tau: 0.5
+  weight: 2
+classical_signal_2:
+  member: c2  # FPFH-SVM margin
+  tau: 1.0
+  weight: 2
+# v3 MC-FPS signal dropped (winner w3=0, w5=2)
+# Final: p = 2*softmax(v5_mc_mean_logp) + 2*softmax(c1_dist/0.5) + 2*softmax(c2_margin/1.0)
+# TEST: acc=94.79, bal=91.48, macF1=92.25

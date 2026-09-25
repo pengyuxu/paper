@@ -1,0 +1,48 @@
+# SHREC 2025 蛋白质形状分类 —— 复现依赖（本机真实训练环境）
+# 环境：Python 3.8.10 / NVIDIA 驱动 535.161.07（最高 CUDA 12.2）/ 2× A40
+# 说明：原 cu126 方案需驱动 ≥545（CUDA 12.6），本机驱动不支持；
+#       本机论文实验实际在 torch 2.3.0+cu121 下完成，此处按真实环境 pin。
+# torch 2.3.0+cu121 wheel 会自动拉取匹配的 nvidia-*-cu12 运行时库，无需手动 pin。
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+# --- 深度学习栈 ---
+torch==2.3.0+cu121
+torchvision==0.18.0+cu121
+triton==2.3.0
+
+# --- 科学计算 / 经典机器学习 ---
+numpy==1.24.4
+scipy==1.10.1
+scikit-learn==1.3.2
+pandas==2.0.3
+matplotlib==3.7.5
+
+# --- 点云 / 几何 ---
+trimesh==4.12.2
+point-cloud-utils==0.34.0
+open3d==0.13.0          # py3.8 能装到的最新版；FPFH 提取用
+
+# --- 工具 ---
+tqdm==4.66.4
+PyYAML==6.0.3
+pillow==10.3.0
+
+# --- torch / matplotlib 运行时依赖（已随主包装好，列出供完整复现）---
+filelock==3.14.0
+typing-extensions==4.12.0
+sympy==1.12
+mpmath==1.3.0
+networkx==3.1
+jinja2==3.1.4
+fsspec==2024.3.1
+contourpy==1.1.1
+cycler==0.12.1
+fonttools==4.52.4
+kiwisolver==1.4.5
+pyparsing==3.1.2
+python-dateutil==2.9.0.post0
+pytz==2024.1
+tzdata==2024.1
+six==1.14.0
+packaging==24.0
+joblib==1.4.2

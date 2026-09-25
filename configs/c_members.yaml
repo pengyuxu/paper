@@ -1,0 +1,62 @@
+# C-layer member configurations (frozen on val, reported on test once)
+# C1: 3D Zernike Descriptor
+c1:
+  method: 3DZD
+  dimensions: 363  # 3 blocks x 121 coefficients
+  classifier: 1-NN + volume gate [0.8, 1.2]
+  test_acc: 0.9100
+  test_bal: 0.8914
+  test_mac: 0.8867
+
+c1d:
+  method: 3DZD + StandardScaler + RBF-SVM
+  C: 50
+  gamma: 0.003
+  decision_function: true  # NOT Platt probability
+  test_acc: 0.9216
+  test_bal: 0.8953
+  test_mac: 0.8983
+
+c2:
+  method: FPFH + L2-normalized + RBF-SVM
+  dimensions: 612
+  C: 64
+  gamma: 12
+  decision_function: true
+  test_acc: 0.9052
+  test_bal: 0.8570
+  test_mac: 0.8401
+
+c2b:
+  method: FPFH + ExtraTrees
+  n_estimators: 500
+  max_features: null
+  class_weight: balanced
+  test_acc: 0.9022
+  test_bal: 0.8018
+  test_mac: 0.8086
+
+c3:
+  method: Guerra topology + SimpleNN 8-view hard vote
+  dimensions: 171
+  clean_refit_on_full_9244: true  # MUST refit on full train, not just 7428
+  test_acc: 0.8320
+  test_bal: 0.7101
+  test_mac: 0.7072
+
+c3b:
+  method: Guerra cleaned descriptors + RBF-SVM
+  C: 32
+  kernel: rbf
+  scale: true
+  test_acc: 0.8208
+  test_bal: 0.6486
+  test_mac: 0.6663
+
+c4:
+  method: [363 ZDZ | 612 FPFH] block-standardized concat + RBF-SVM
+  C: 16
+  gamma: 0.003
+  test_acc: 0.9324
+  test_bal: 0.8633
+  test_mac: 0.8822

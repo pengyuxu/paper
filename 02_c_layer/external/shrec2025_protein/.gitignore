@@ -1,0 +1,13 @@
+bin/**
+!bin/.gitkeep
+dataset/**
+!dataset/train_set/.gitkeep
+!dataset/test_set/.gitkeep
+
+ml/__pycache__/
+ml/*.py[oc]
+ml/build/
+ml/dist/
+ml/wheels/
+ml/*.egg-info
+ml/.venv

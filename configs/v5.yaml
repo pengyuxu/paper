@@ -1,0 +1,23 @@
+# v5 training configuration (frozen, from train_v5.py defaults)
+model: riconv2_cls_v2_features2_largest
+num_class: 97
+num_point: 8192
+num_channels: 2  # normal_channel=True
+batch_size: 16
+epochs: 250
+lr: 0.001
+weight_decay: 0.0001
+scheduler: cosine
+T_max: 245
+eta_min: 0.00001
+warmup_epochs: 5
+focal_gamma: 1.0
+label_smoothing: 0.1
+cutmix_prob: 0.2
+class_weight: sqrt_inverse
+class_weight_clip: 10
+rare_class_synthesis: 4
+swa_start: 200
+swa_lr: 0.0005
+seeds: [1, 2]
+# Seed 2 SWA selected as final (best val macF1 0.8841, TEST 93.24/89.62/90.00)
