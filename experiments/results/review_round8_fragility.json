@@ -1,0 +1,101 @@
+{
+  "paper": {
+    "externals_f1": {
+      "kagaya_3D-Surfer": 0.8870448132768112,
+      "barisin_geom_prop": 0.8580317646602615,
+      "tatsuma": 0.8460980765287561,
+      "barisin_geom": 0.8035841022148303,
+      "guerra_v3": 0.7401898129350031,
+      "guerra_v2": 0.7134693004096213,
+      "he_v2": 0.6890392840661705,
+      "he_v1": 0.6829011032983415,
+      "guerra_v4": 0.6630608561067437,
+      "peng": 0.5617536272041733,
+      "tehrani_v1": 0.4141114386239311,
+      "yang_ProtoCluster": 0.4080765098201561,
+      "li_RISurProNet": 0.0856136453454637,
+      "tehrani_v2": 0.0403214891473768,
+      "guerra_v1": 0.0139605711824561
+    },
+    "configs": {
+      "v3": {
+        "mix_f1": 0.880772903293996,
+        "draw_min": 0.8643789511686083,
+        "draw_max": 0.891971465670088,
+        "n_draws_below_mix": 12,
+        "n_draws_above_mix": 13
+      },
+      "v5-SWA": {
+        "mix_f1": 0.9174276510653666,
+        "draw_min": 0.870550227494371,
+        "draw_max": 0.9127410039309006,
+        "n_draws_below_mix": 25,
+        "n_draws_above_mix": 0
+      }
+    },
+    "reversals": [
+      {
+        "config": "v3",
+        "external": "kagaya_3D-Surfer",
+        "external_f1": 0.8870448132768112,
+        "mix_f1": 0.880772903293996,
+        "mix_side": "below",
+        "n_draws_opposite": 4,
+        "n_draws": 25
+      },
+      {
+        "config": "v5-SWA",
+        "external": "kagaya_3D-Surfer",
+        "external_f1": 0.8870448132768112,
+        "mix_f1": 0.9174276510653666,
+        "mix_side": "above",
+        "n_draws_opposite": 3,
+        "n_draws": 25
+      }
+    ],
+    "n_deep_vs_external_pairs": 30,
+    "n_pairs_unstable": 2,
+    "n_draw_level_flips": 7,
+    "n_deep_vs_external_draw_level": 750
+  },
+  "updated": {
+    "externals_f1": {
+      "kagaya_3D-Surfer": 0.8674723597358456,
+      "barisin_geom_prop": 0.8385899550512514,
+      "tatsuma": 0.8275376305522681,
+      "barisin_geom": 0.7858105710008464,
+      "guerra_v3": 0.7239573648214512,
+      "guerra_v2": 0.6977161593785397,
+      "he_v2": 0.6737514878960228,
+      "he_v1": 0.6684006671468132,
+      "guerra_v4": 0.6486923337117037,
+      "peng": 0.5491880215182965,
+      "tehrani_v1": 0.4060574315980927,
+      "yang_ProtoCluster": 0.3998553628974777,
+      "li_RISurProNet": 0.08482795663424,
+      "tehrani_v2": 0.0397267073810448,
+      "guerra_v1": 0.013659173486066
+    },
+    "configs": {
+      "v3": {
+        "mix_f1": 0.9025624682191699,
+        "draw_min": 0.8749833756298417,
+        "draw_max": 0.9127522153190231,
+        "n_draws_below_mix": 19,
+        "n_draws_above_mix": 6
+      },
+      "v5-SWA": {
+        "mix_f1": 0.9079138572580837,
+        "draw_min": 0.8772725696792001,
+        "draw_max": 0.9093469688622225,
+        "n_draws_below_mix": 23,
+        "n_draws_above_mix": 2
+      }
+    },
+    "reversals": [],
+    "n_deep_vs_external_pairs": 30,
+    "n_pairs_unstable": 0,
+    "n_draw_level_flips": 0,
+    "n_deep_vs_external_draw_level": 750
+  }
+}

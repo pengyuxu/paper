@@ -1,0 +1,109 @@
+label,version,split,kind,metric,expected,computed,diff,PASS
+v3 single,paper,val,deep_K1,acc,0.932269,0.932269,0.0,✓
+v3 single,paper,val,deep_K1,bal,0.884368,0.884368,0.0,✓
+v3 single,paper,val,deep_K1,mac,0.869408,0.869408,0.0,✓
+v3 single,paper,test,deep_K1,acc,0.935526,0.935526,0.0,✓
+v3 single,paper,test,deep_K1,bal,0.885848,0.885848,0.0,✓
+v3 single,paper,test,deep_K1,mac,0.888667,0.888667,0.0,✓
+v3 single,updated,val,deep_K1,acc,0.932269,0.932269,0.0,✓
+v3 single,updated,val,deep_K1,bal,0.866827,0.866827,0.0,✓
+v3 single,updated,val,deep_K1,mac,0.862846,0.862846,0.0,✓
+v3 single,updated,test,deep_K1,acc,0.939341,0.939341,0.0,✓
+v3 single,updated,test,deep_K1,bal,0.883897,0.883897,0.0,✓
+v3 single,updated,test,deep_K1,mac,0.891265,0.891265,0.0,✓
+v3 K25,paper,val,deep_K25,acc,0.939427,0.939427,0.0,✓
+v3 K25,paper,val,deep_K25,bal,0.898597,0.898597,0.0,✓
+v3 K25,paper,val,deep_K25,mac,0.888443,0.888443,0.0,✓
+v3 K25,paper,test,deep_K25,acc,0.938122,0.938122,0.0,✓
+v3 K25,paper,test,deep_K25,bal,0.876221,0.876221,0.0,✓
+v3 K25,paper,test,deep_K25,mac,0.880773,0.880773,0.0,✓
+v3 K25,updated,val,deep_K25,acc,0.946035,0.946035,0.0,✓
+v3 K25,updated,val,deep_K25,bal,0.890933,0.890933,0.0,✓
+v3 K25,updated,val,deep_K25,mac,0.890242,0.890242,0.0,✓
+v3 K25,updated,test,deep_K25,acc,0.943674,0.943674,0.0,✓
+v3 K25,updated,test,deep_K25,bal,0.897469,0.897469,0.0,✓
+v3 K25,updated,test,deep_K25,mac,0.902562,0.902562,0.0,✓
+v5 s2-SWA single,paper,val,deep_K1,acc,0.930066,0.930066,0.0,✓
+v5 s2-SWA single,paper,val,deep_K1,bal,0.866937,0.866937,0.0,✓
+v5 s2-SWA single,paper,val,deep_K1,mac,0.861758,0.861758,0.0,✓
+v5 s2-SWA single,paper,test,deep_K1,acc,0.93466,0.93466,0.0,✓
+v5 s2-SWA single,paper,test,deep_K1,bal,0.893492,0.893492,0.0,✓
+v5 s2-SWA single,paper,test,deep_K1,mac,0.897169,0.897169,0.0,✓
+v5 s2-SWA single,updated,val,deep_K1,acc,0.938326,0.938326,0.0,✓
+v5 s2-SWA single,updated,val,deep_K1,bal,0.874763,0.874763,0.0,✓
+v5 s2-SWA single,updated,val,deep_K1,mac,0.872108,0.872108,0.0,✓
+v5 s2-SWA single,updated,test,deep_K1,acc,0.932409,0.932409,0.0,✓
+v5 s2-SWA single,updated,test,deep_K1,bal,0.889903,0.889903,0.0,✓
+v5 s2-SWA single,updated,test,deep_K1,mac,0.895037,0.895037,0.0,✓
+v5 s2-SWA K25,paper,val,deep_K25,acc,0.941079,0.941079,0.0,✓
+v5 s2-SWA K25,paper,val,deep_K25,bal,0.896885,0.896885,0.0,✓
+v5 s2-SWA K25,paper,val,deep_K25,mac,0.890845,0.890845,0.0,✓
+v5 s2-SWA K25,paper,test,deep_K25,acc,0.945478,0.945478,0.0,✓
+v5 s2-SWA K25,paper,test,deep_K25,bal,0.910016,0.910016,0.0,✓
+v5 s2-SWA K25,paper,test,deep_K25,mac,0.917428,0.917428,0.0,✓
+v5 s2-SWA K25,updated,val,deep_K25,acc,0.946035,0.946035,0.0,✓
+v5 s2-SWA K25,updated,val,deep_K25,bal,0.893405,0.893405,0.0,✓
+v5 s2-SWA K25,updated,val,deep_K25,mac,0.890454,0.890454,0.0,✓
+v5 s2-SWA K25,updated,test,deep_K25,acc,0.944541,0.944541,0.0,✓
+v5 s2-SWA K25,updated,test,deep_K25,bal,0.902818,0.902818,0.0,✓
+v5 s2-SWA K25,updated,test,deep_K25,mac,0.907914,0.907914,0.0,✓
+v5 s1-best K25,paper,val,deep_K25,acc,0.939978,0.939978,0.0,✓
+v5 s1-best K25,paper,val,deep_K25,bal,0.895319,0.895319,0.0,✓
+v5 s1-best K25,paper,val,deep_K25,mac,0.891794,0.891794,0.0,✓
+v5 s1-best K25,paper,test,deep_K25,acc,0.942449,0.942449,0.0,✓
+v5 s1-best K25,paper,test,deep_K25,bal,0.899711,0.899711,0.0,✓
+v5 s1-best K25,paper,test,deep_K25,mac,0.906379,0.906379,0.0,✓
+v5 s1-best K25,updated,val,deep_K25,acc,0.939427,0.939427,0.0,✓
+v5 s1-best K25,updated,val,deep_K25,bal,0.855302,0.855302,0.0,✓
+v5 s1-best K25,updated,val,deep_K25,mac,0.856457,0.856457,0.0,✓
+v5 s1-best K25,updated,test,deep_K25,acc,0.945407,0.945407,0.0,✓
+v5 s1-best K25,updated,test,deep_K25,bal,0.897963,0.897963,0.0,✓
+v5 s1-best K25,updated,test,deep_K25,mac,0.906561,0.906561,0.0,✓
+p7 val,paper,val,fusion,acc,0.924559,0.924559,0.0,✓
+p7 val,paper,val,fusion,bal,0.874548,0.874548,0.0,✓
+p7 val,paper,val,fusion,mac,0.878887,0.878887,0.0,✓
+p7 test,paper,test,fusion,acc,0.91865,0.91865,0.0,✓
+p7 test,paper,test,fusion,bal,0.838641,0.838641,0.0,✓
+p7 test,paper,test,fusion,mac,0.85019,0.85019,0.0,✓
+p11 val,paper,val,fusion,acc,0.946035,0.946035,0.0,✓
+p11 val,paper,val,fusion,bal,0.902871,0.902871,0.0,✓
+p11 val,paper,val,fusion,mac,0.906447,0.906447,0.0,✓
+p11 test,paper,test,fusion,acc,0.93942,0.93942,0.0,✓
+p11 test,paper,test,fusion,bal,0.882005,0.882005,0.0,✓
+p11 test,paper,test,fusion,mac,0.889876,0.889876,0.0,✓
+final val,paper,val,fusion,acc,0.942731,0.942731,0.0,✓
+final val,paper,val,fusion,bal,0.889311,0.889311,0.0,✓
+final val,paper,val,fusion,mac,0.884087,0.884087,0.0,✓
+final test,paper,test,fusion,acc,0.93466,0.93466,0.0,✓
+final test,paper,test,fusion,bal,0.863128,0.863128,0.0,✓
+final test,paper,test,fusion,mac,0.873767,0.873767,0.0,✓
+p7 val,updated,val,fusion,acc,0.924559,0.924559,0.0,✓
+p7 val,updated,val,fusion,bal,0.871291,0.871291,0.0,✓
+p7 val,updated,val,fusion,mac,0.876553,0.876553,0.0,✓
+p7 test,updated,test,fusion,acc,0.917678,0.917678,0.0,✓
+p7 test,updated,test,fusion,bal,0.834328,0.834328,0.0,✓
+p7 test,updated,test,fusion,mac,0.846242,0.846242,0.0,✓
+p11 val,updated,val,fusion,acc,0.952093,0.952093,0.0,✓
+p11 val,updated,val,fusion,bal,0.917836,0.917836,0.0,✓
+p11 val,updated,val,fusion,mac,0.919047,0.919047,0.0,✓
+p11 test,updated,test,fusion,acc,0.946274,0.946274,0.0,✓
+p11 test,updated,test,fusion,bal,0.896236,0.896236,0.0,✓
+p11 test,updated,test,fusion,mac,0.907266,0.907266,0.0,✓
+final val,updated,val,fusion,acc,0.943282,0.943282,0.0,✓
+final val,updated,val,fusion,bal,0.892282,0.892282,0.0,✓
+final val,updated,val,fusion,mac,0.889189,0.889189,0.0,✓
+final test,updated,test,fusion,acc,0.937608,0.937608,0.0,✓
+final test,updated,test,fusion,bal,0.868342,0.868342,0.0,✓
+final test,updated,test,fusion,mac,0.878056,0.878056,0.0,✓
+rho_c1_vs_s2,paper,-,rho,c1_vs_s2,0.261603,0.261603,0.0,✓
+rho_c1d_vs_s2,paper,-,rho,c1d_vs_s2,0.325243,0.325243,0.0,✓
+rho_c2_vs_s2,paper,-,rho,c2_vs_s2,0.336683,0.336683,0.0,✓
+rho_v3_vs_s2,paper,-,rho,v3_vs_s2,0.764228,0.764228,0.0,✓
+rho_c3_vs_s2,paper,-,rho,c3_vs_s2,0.196286,0.196286,0.0,✓
+rho_c3_mac,paper,-,rho,c3_mac,0.610661,0.610661,0.0,✓
+rho_c1_vs_s2,updated,-,rho,c1_vs_s2,0.255411,0.255411,0.0,✓
+rho_c1d_vs_s2,updated,-,rho,c1d_vs_s2,0.313433,0.313433,0.0,✓
+rho_c2_vs_s2,updated,-,rho,c2_vs_s2,0.304569,0.304569,0.0,✓
+rho_v3_vs_s2,updated,-,rho,v3_vs_s2,0.781818,0.781818,0.0,✓
+rho_c3_vs_s2,updated,-,rho,c3_vs_s2,0.189974,0.189974,0.0,✓
+rho_c3_mac,updated,-,rho,c3_mac,0.585745,0.585745,0.0,✓

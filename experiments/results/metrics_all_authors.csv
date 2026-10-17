@@ -1,0 +1,16 @@
+author,Method,Accuracy (%),Balanced Accuracy (%),F1 Score (%),Precision (%),Recall (%),Method Type
+tatsuma,Tatsuma,88,85,88,90,88,Machine Learning
+barisin_geom,Barisin_v1,92,80,91,92,92,Deep Learning
+barisin_geom_prop,Barisin_v2,93,85,92,93,93,Deep Learning
+shiqiang,Peng,77,57,72,80,77,Deep Learning
+kagaya,3D-SURFER,91,89,91,91,91,Training Free
+guerra_topol,Guerra_v1,84,76,83,84,84,Deep Learning
+guerra_pointnet,Guerra_v2,79,71,79,79,79,Deep Learning
+guerra_image,Guerra_v3,80,75,80,82,80,Deep Learning
+guerra_combi,Guerra_v4,87,81,87,87,87,Deep Learning
+cabani_modele1,3D-PROSPER_v1,80,67,78,79,80,Deep Learning
+cabani_modele2,3D-PROSPER_v2,80,68,79,80,80,Deep Learning
+huang,RISurProtNet *,32,9,26,49,32,Deep Learning
+meng_modele1,Tehrani_v1,72,43,66,75,72,Deep Learning
+meng_modele2,Tehrani_v2 *,17,4,15,22,17,Machine Learning
+yang,ProtoCluster,71,42,67,72,71,Deep Learning
