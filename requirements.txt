@@ -1,0 +1,10 @@
+# Core (tables, figures, audit, verification — CPU only)
+numpy==1.24.4
+pandas==2.0.3
+scikit-learn==1.3.2
+scipy==1.10.1
+matplotlib==3.7.5
+
+# Optional: only needed to regenerate .npz caches from checkpoints
+# (Stage D in README; everything else runs without torch)
+# torch==2.3.0
